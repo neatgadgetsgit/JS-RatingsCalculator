@@ -9,5 +9,6 @@ const collect_ratings = () => {
     });
     if (ratings.count != 0) {
         ratings.average = ratings.sum / ratings.count;
-    } ;
+    };
+    return collect_ratings();
 }
